@@ -32,6 +32,20 @@
       }
     },
     {
+      "name": "Close",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "close",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/auroraprojectremake/procedures/CloseProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
       "name": "Speachvagabon",
       "type": "procedure",
       "sortid": 7,
@@ -63,25 +77,20 @@
         "files": [
           "src/main/java/net/mcreator/auroraprojectremake/procedures/OpenProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Aridea/dialogues/vagabon"
     },
     {
-      "name": "Close",
+      "name": "Tptoarideafonction",
       "type": "procedure",
-      "sortid": 9,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "close",
+      "registry_name": "tptoarideafonction",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/auroraprojectremake/procedures/CloseProcedure.java"
+          "src/main/java/net/mcreator/auroraprojectremake/procedures/TptoarideafonctionProcedure.java"
         ],
         "dependencies": [
           {
@@ -89,7 +98,52 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Aridea"
+    },
+    {
+      "name": "ArideaDesert",
+      "type": "biome",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aridea_desert",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/aurora_project_remake/worldgen/biome/aridea_desert.json"
+        ]
+      },
+      "path": "~/Aridea"
+    },
+    {
+      "name": "ArideaPlanet",
+      "type": "dimension",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aridea_planet",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/aurora_project_remake/dimension_type/aridea_planet.json",
+          "src/main/resources/data/aurora_project_remake/dimension/aridea_planet.json",
+          "src/main/java/net/mcreator/auroraprojectremake/world/dimension/ArideaPlanetDimension.java"
+        ]
+      },
+      "path": "~/Aridea"
+    },
+    {
+      "name": "TeleportToAridea",
+      "type": "command",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleport_to_aridea",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/auroraprojectremake/command/TeleportToArideaCommand.java"
+        ]
+      },
+      "path": "~/Aridea"
     }
   ],
   "variable_elements": [
@@ -103,6 +157,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "biome.aurora_project_remake.aridea_desert": "Desert d\u0027Aridea",
       "item.aurora_project_remake.thesandvagabond_spawn_egg": "The sand vagabond Spawn Egg",
       "entity.aurora_project_remake.thesandvagabond": "The sand vagabond"
     }
