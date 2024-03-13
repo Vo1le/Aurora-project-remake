@@ -2,28 +2,74 @@
   "_fv": 57,
   "_type": "gui",
   "definition": {
-    "type": 1,
-    "width": 176,
-    "height": 166,
+    "type": 0,
+    "width": 0,
+    "height": 0,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
-    "renderBgLayer": true,
+    "renderBgLayer": false,
     "doesPauseGame": false,
     "components": [
       {
-        "type": "entitymodel",
+        "type": "label",
         "data": {
-          "entityModel": {
-            "name": "Openvagabond"
+          "name": "label_proc_speachvagabon",
+          "text": {
+            "fixedValue": "",
+            "name": "Speachvagabon"
           },
-          "scale": 30,
-          "rotationX": 0,
-          "followMouseMovement": false,
-          "x": 204,
-          "y": 44
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 21,
+          "y": 56
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "tal.png",
+          "use1Xscale": false,
+          "x": 15,
+          "y": 32
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "vagabonphoto.png",
+          "use1Xscale": true,
+          "x": 273,
+          "y": 43
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "vagabond.png",
+          "use1Xscale": true,
+          "x": 16,
+          "y": 35
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_x",
+          "image": "x.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "Open"
+          },
+          "x": 316,
+          "y": 36
         }
       }
     ],
+    "onClosed": {
+      "name": "Close"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,

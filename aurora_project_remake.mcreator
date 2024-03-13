@@ -17,26 +17,6 @@
       }
     },
     {
-      "name": "Openvagabond",
-      "type": "procedure",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "openvagabond",
-      "metadata": {
-        "return_type": "entity",
-        "files": [
-          "src/main/java/net/mcreator/auroraprojectremake/procedures/OpenvagabondProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "Vagabon",
       "type": "gui",
       "sortid": 3,
@@ -46,21 +26,62 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/auroraprojectremake/client/gui/VagabonScreen.java",
+          "src/main/java/net/mcreator/auroraprojectremake/network/VagabonButtonMessage.java",
           "src/main/java/net/mcreator/auroraprojectremake/world/inventory/VagabonMenu.java"
         ]
       }
     },
     {
-      "name": "VagabonThisGUIIsOpened",
+      "name": "Speachvagabon",
       "type": "procedure",
-      "sortid": 4,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "vagabon_this_gui_is_opened",
+      "registry_name": "speachvagabon",
       "metadata": {
-        "return_type": "entity",
+        "return_type": "string",
         "files": [
-          "src/main/java/net/mcreator/auroraprojectremake/procedures/VagabonThisGUIIsOpenedProcedure.java"
+          "src/main/java/net/mcreator/auroraprojectremake/procedures/SpeachvagabonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Aridea/dialogues/vagabon"
+    },
+    {
+      "name": "Open",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/auroraprojectremake/procedures/OpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Aridea/dialogues/vagabon"
+    },
+    {
+      "name": "Close",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "close",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/auroraprojectremake/procedures/CloseProcedure.java"
         ],
         "dependencies": [
           {
@@ -71,7 +92,14 @@
       }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "speach",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
@@ -84,7 +112,17 @@
     "children": [
       {
         "name": "Aridea",
-        "children": []
+        "children": [
+          {
+            "name": "dialogues",
+            "children": [
+              {
+                "name": "vagabon",
+                "children": []
+              }
+            ]
+          }
+        ]
       }
     ]
   },
