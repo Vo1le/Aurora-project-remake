@@ -3,6 +3,7 @@
     {
       "name": "Tptoarideafonction",
       "type": "procedure",
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tptoarideafonction",
@@ -22,6 +23,7 @@
     {
       "name": "ArideaDesert",
       "type": "biome",
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aridea_desert",
@@ -35,6 +37,7 @@
     {
       "name": "ArideaPlanet",
       "type": "dimension",
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aridea_planet",
@@ -50,6 +53,7 @@
     {
       "name": "TeleportToAridea",
       "type": "command",
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "teleport_to_aridea",
@@ -134,7 +138,10 @@
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.aurora_project_remake.thesandvagabond_spawn_egg": "The sand vagabond Spawn Egg",
+      "entity.aurora_project_remake.thesandvagabond": "The sand vagabond"
+    }
   },
   "foldersRoot": {
     "name": "~",

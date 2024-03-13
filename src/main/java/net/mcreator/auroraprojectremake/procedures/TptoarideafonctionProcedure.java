@@ -1,15 +1,25 @@
 package net.mcreator.auroraprojectremake.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
-
-import javax.annotation.Nullable;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket;
+import net.minecraft.network.protocol.game.ClientboundPlayerAbilitiesPacket;
+import net.minecraft.network.protocol.game.ClientboundLevelEventPacket;
+import net.minecraft.network.protocol.game.ClientboundGameEventPacket;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.BlockPos;
 
 public class TptoarideafonctionProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
 		if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-			ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("aurora_project_remake:deleted_mod_element"));
+			ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("aurora_project_remake:aridea_planet"));
 			if (_player.level().dimension() == destinationType)
 				return;
 			ServerLevel nextLevel = _player.server.getLevel(destinationType);

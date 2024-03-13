@@ -1,9 +1,24 @@
 package net.mcreator.auroraprojectremake.client.gui;
 
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
+import net.minecraft.client.gui.screens.inventory.InventoryScreen;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.GuiGraphics;
+
+import net.mcreator.auroraprojectremake.world.inventory.VagabonMenu;
+import net.mcreator.auroraprojectremake.procedures.OpenvagabondProcedure;
+
+import java.util.HashMap;
+
+import com.mojang.blaze3d.systems.RenderSystem;
+
 public class VagabonScreen extends AbstractContainerScreen<VagabonMenu> {
-
 	private final static HashMap<String, Object> guistate = VagabonMenu.guistate;
-
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
@@ -24,19 +39,11 @@ public class VagabonScreen extends AbstractContainerScreen<VagabonMenu> {
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(guiGraphics);
-
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
-
-		if (
-
-		OpenvagabondProcedure.execute(entity)
-
-		instanceof LivingEntity livingEntity) {
+		if (OpenvagabondProcedure.execute(entity) instanceof LivingEntity livingEntity) {
 			InventoryScreen.renderEntityInInventoryFollowsAngle(guiGraphics, this.leftPos + 88, this.topPos + 27, 30, 0f, 0, livingEntity);
 		}
-
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
-
 	}
 
 	@Override
@@ -44,9 +51,7 @@ public class VagabonScreen extends AbstractContainerScreen<VagabonMenu> {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-
 		RenderSystem.disableBlend();
 	}
 
@@ -56,7 +61,6 @@ public class VagabonScreen extends AbstractContainerScreen<VagabonMenu> {
 			this.minecraft.player.closeContainer();
 			return true;
 		}
-
 		return super.keyPressed(key, b, c);
 	}
 
@@ -77,7 +81,5 @@ public class VagabonScreen extends AbstractContainerScreen<VagabonMenu> {
 	@Override
 	public void init() {
 		super.init();
-
 	}
-
 }

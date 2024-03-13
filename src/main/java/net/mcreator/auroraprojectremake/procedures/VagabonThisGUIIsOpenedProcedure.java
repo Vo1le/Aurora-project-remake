@@ -1,8 +1,6 @@
 package net.mcreator.auroraprojectremake.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
-
-import javax.annotation.Nullable;
+import net.minecraft.world.entity.Entity;
 
 public class VagabonThisGUIIsOpenedProcedure {
 	public static Entity execute(Entity entity) {
