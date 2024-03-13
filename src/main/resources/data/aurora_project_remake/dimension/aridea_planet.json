@@ -30,10 +30,7 @@
         "Name": "minecraft:sandstone"
       },
       "default_fluid": {
-        "Name": "minecraft:lava",
-        "Properties": {
-          "level": "0"
-        }
+        "Name": "minecraft:sandstone"
       },
       "spawn_target": [],
       "noise": {
