@@ -1,9 +1,83 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Thesandvagabond",
+      "type": "livingentity",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thesandvagabond",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/aurora_project_remake/forge/biome_modifier/thesandvagabond_biome_modifier.json",
+          "src/main/java/net/mcreator/auroraprojectremake/entity/ThesandvagabondEntity.java",
+          "src/main/resources/assets/aurora_project_remake/models/item/thesandvagabond_spawn_egg.json",
+          "src/main/java/net/mcreator/auroraprojectremake/client/renderer/ThesandvagabondRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "Openvagabond",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "openvagabond",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/auroraprojectremake/procedures/OpenvagabondProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Vagabon",
+      "type": "gui",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vagabon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/auroraprojectremake/client/gui/VagabonScreen.java",
+          "src/main/java/net/mcreator/auroraprojectremake/world/inventory/VagabonMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "VagabonThisGUIIsOpened",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vagabon_this_gui_is_opened",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/auroraprojectremake/procedures/VagabonThisGUIIsOpenedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.aurora_project_remake.thesandvagabond_spawn_egg": "The sand vagabond Spawn Egg",
+      "entity.aurora_project_remake.thesandvagabond": "The sand vagabond"
+    }
   },
   "foldersRoot": {
     "name": "~",
