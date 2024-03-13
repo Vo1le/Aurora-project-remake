@@ -7,7 +7,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Aridea",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "aurora_project_remake",
