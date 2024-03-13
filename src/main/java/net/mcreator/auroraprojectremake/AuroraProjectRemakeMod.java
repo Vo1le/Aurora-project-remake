@@ -29,6 +29,11 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.auroraprojectremake.init.AuroraProjectRemakeModTabs;
+import net.mcreator.auroraprojectremake.init.AuroraProjectRemakeModMenus;
+import net.mcreator.auroraprojectremake.init.AuroraProjectRemakeModItems;
+import net.mcreator.auroraprojectremake.init.AuroraProjectRemakeModEntities;
+
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -47,6 +52,12 @@ public class AuroraProjectRemakeMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
+		AuroraProjectRemakeModItems.REGISTRY.register(bus);
+		AuroraProjectRemakeModEntities.REGISTRY.register(bus);
+
+		AuroraProjectRemakeModTabs.REGISTRY.register(bus);
+
+		AuroraProjectRemakeModMenus.REGISTRY.register(bus);
 	}
 
 	private static final String PROTOCOL_VERSION = "1";
