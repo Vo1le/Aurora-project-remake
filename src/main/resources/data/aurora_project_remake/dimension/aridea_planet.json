@@ -6,7 +6,7 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "aurora_project_remake:deleted_mod_element",
+          "biome": "aurora_project_remake:aridea_desert",
           "parameters": {
             "temperature": 0,
             "humidity": 0,
@@ -380,7 +380,7 @@
             "if_true": {
               "type": "minecraft:biome",
               "biome_is": [
-                "aurora_project_remake:deleted_mod_element"
+                "aurora_project_remake:aridea_desert"
               ]
             },
             "then_run": {
