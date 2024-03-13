@@ -1,9 +1,72 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "ArideaPlanet",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aridea_planet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/auroraprojectremake/world/dimension/ArideaPlanetDimension.java",
+          "src/main/resources/data/aurora_project_remake/dimension/aridea_planet.json",
+          "src/main/resources/data/aurora_project_remake/dimension_type/aridea_planet.json"
+        ]
+      },
+      "path": "~/Aridea"
+    },
+    {
+      "name": "Tptoarideafonction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tptoarideafonction",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/auroraprojectremake/procedures/TptoarideafonctionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Aridea"
+    },
+    {
+      "name": "TeleportToAridea",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleport_to_aridea",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/auroraprojectremake/command/TeleportToArideaCommand.java"
+        ]
+      },
+      "path": "~/Aridea"
+    },
+    {
+      "name": "ArideaDesert",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aridea_desert",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/aurora_project_remake/worldgen/biome/aridea_desert.json"
+        ]
+      },
+      "path": "~/Aridea"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "biome.aurora_project_remake.aridea_desert": "Desert d\u0027Aridea"
+    }
   },
   "foldersRoot": {
     "name": "~",
