@@ -55,6 +55,9 @@
         "data": {
           "image": "dans-les-vastes-terres-cubique-14-03-2024.png",
           "use1Xscale": true,
+          "displayCondition": {
+            "name": "Speachvagabon"
+          },
           "x": 20,
           "y": 43
         }

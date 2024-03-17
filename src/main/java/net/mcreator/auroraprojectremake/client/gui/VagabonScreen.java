@@ -10,6 +10,7 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.auroraprojectremake.world.inventory.VagabonMenu;
+import net.mcreator.auroraprojectremake.procedures.SpeachvagabonProcedure;
 import net.mcreator.auroraprojectremake.network.VagabonButtonMessage;
 import net.mcreator.auroraprojectremake.AuroraProjectRemakeMod;
 
@@ -54,8 +55,9 @@ public class VagabonScreen extends AbstractContainerScreen<VagabonMenu> {
 
 		guiGraphics.blit(new ResourceLocation("aurora_project_remake:textures/screens/vagabond.png"), this.leftPos + -100, this.topPos + -86, 0, 0, 405, 75, 405, 75);
 
-		guiGraphics.blit(new ResourceLocation("aurora_project_remake:textures/screens/dans-les-vastes-terres-cubique-14-03-2024.png"), this.leftPos + -194, this.topPos + -77, 0, 0, 512, 126, 512, 126);
-
+		if (SpeachvagabonProcedure.execute(entity)) {
+			guiGraphics.blit(new ResourceLocation("aurora_project_remake:textures/screens/dans-les-vastes-terres-cubique-14-03-2024.png"), this.leftPos + -194, this.topPos + -77, 0, 0, 512, 126, 512, 126);
+		}
 		RenderSystem.disableBlend();
 	}
 

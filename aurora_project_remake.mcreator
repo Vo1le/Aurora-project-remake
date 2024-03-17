@@ -58,7 +58,7 @@
       "locked_code": false,
       "registry_name": "speachvagabon",
       "metadata": {
-        "return_type": "string",
+        "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/auroraprojectremake/procedures/SpeachvagabonProcedure.java"
         ],
@@ -154,6 +154,27 @@
         ]
       },
       "path": "~/Aridea"
+    },
+    {
+      "name": "Spechvagabon2",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spechvagabon_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/auroraprojectremake/procedures/Spechvagabon2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Aridea/dialogues/vagabon"
     }
   ],
   "variable_elements": [
