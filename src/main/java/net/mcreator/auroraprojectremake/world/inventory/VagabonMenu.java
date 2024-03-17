@@ -72,7 +72,7 @@ public class VagabonMenu extends AbstractContainerMenu implements Supplier<Map<I
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
-		CloseProcedure.execute();
+		CloseProcedure.execute(entity);
 	}
 
 	public Map<Integer, Slot> get() {

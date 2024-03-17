@@ -11,28 +11,12 @@
     "doesPauseGame": false,
     "components": [
       {
-        "type": "label",
-        "data": {
-          "name": "label_proc_speachvagabon",
-          "text": {
-            "fixedValue": "",
-            "name": "Speachvagabon"
-          },
-          "color": {
-            "value": -16777216,
-            "falpha": 0.0
-          },
-          "x": 21,
-          "y": 56
-        }
-      },
-      {
         "type": "image",
         "data": {
           "image": "tal.png",
           "use1Xscale": false,
           "x": 15,
-          "y": 32
+          "y": 31
         }
       },
       {
@@ -40,8 +24,8 @@
         "data": {
           "image": "vagabonphoto.png",
           "use1Xscale": true,
-          "x": 273,
-          "y": 43
+          "x": 276,
+          "y": 45
         }
       },
       {
@@ -49,8 +33,8 @@
         "data": {
           "image": "vagabond.png",
           "use1Xscale": true,
-          "x": 16,
-          "y": 35
+          "x": 114,
+          "y": 34
         }
       },
       {
@@ -64,6 +48,15 @@
           },
           "x": 316,
           "y": 36
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "dans-les-vastes-terres-cubique-14-03-2024.png",
+          "use1Xscale": true,
+          "x": 20,
+          "y": 43
         }
       }
     ],

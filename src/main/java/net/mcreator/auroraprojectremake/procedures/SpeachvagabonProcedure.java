@@ -14,7 +14,8 @@ public class SpeachvagabonProcedure {
 		String text1 = "";
 		String text2 = "";
 		String print = "";
-		text1 = "aaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaa ";
+		text1 = " Dans les vastes terres cubiques de Minecraft, je suis un vagabond solitaire, errant sans but pr\u00E9cis. Mon sac \u00E0 dos renferme les outils de ma libert\u00E9 : une pioche us\u00E9e, une \u00E9p\u00E9e \u00E9mouss\u00E9e, et quelques provisions. "
+				+ ". Mon seul dessein est d'explorer chaque recoin de ce monde infini, \u00E0 la recherche d'aventures et de d\u00E9couvertes.";
 		text2 = "bbbbbbbbbbbbbbbbbb bbbbbbbbbbbbbbb";
 		number = 2;
 		AuroraProjectRemakeMod.LOGGER.info((entity.getCapability(AuroraProjectRemakeModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new AuroraProjectRemakeModVariables.PlayerVariables())).speach);

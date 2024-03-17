@@ -64,7 +64,7 @@ public class VagabonButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			OpenProcedure.execute();
+			OpenProcedure.execute(entity);
 		}
 	}
 
